@@ -1,0 +1,13 @@
+.git
+.cursor
+design
+docs
+review
+*.md
+*.zip
+*.mp4
+docker-compose.coolify.yml
+docker/env.coolify.example
+**/__pycache__
+**/*.log
+**/*.pyc

@@ -1,0 +1,57 @@
+.construction-main{min-width:0;padding-bottom:32px;}
+.construction-main [hidden]{display:none!important;}
+.construction-notice{padding:14px 18px;border-left:3px solid var(--amber-500);background:var(--amber-50);border-radius:6px;color:var(--slate-600);margin-bottom:18px;}
+.construction-toolbar{display:flex;align-items:end;gap:12px;flex-wrap:wrap;padding:18px;margin-bottom:22px;}
+.construction-toolbar .form-group{min-width:160px;}
+.construction-tabs{display:flex;gap:6px;flex-wrap:wrap;}
+.construction-tabs [aria-pressed="true"]{background:var(--sky-700);border-color:var(--sky-700);color:white;}
+.construction-title{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px;}
+.construction-title h2{font-size:21px;margin:0;}
+.construction-title p{margin:4px 0;color:var(--slate-500);font-size:12px;}
+.construction-kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:18px;}
+.construction-kpis .kpi-card{padding:17px;min-width:0;}
+.construction-kpis .kpi-value{margin:7px 0;font-size:29px;font-variant-numeric:tabular-nums;}
+.construction-kpis .kpi-change{display:block;font-size:12px;color:var(--slate-600);}
+.construction-panel{padding:20px;margin-bottom:18px;min-width:0;}
+.construction-panel h3{margin:0 0 12px;font-size:16px;color:var(--slate-800);}
+.construction-panel .construction-title h3{margin:0;}
+.construction-chart{display:block;width:100%;height:260px;overflow:hidden;}
+.construction-chart text{font:12px system-ui,sans-serif;fill:var(--slate-600);}
+.construction-chart .chart-grid{stroke:var(--slate-200);stroke-width:1;}
+.construction-chart .chart-line{stroke:var(--sky-600);stroke-width:2.5;fill:none;}
+.construction-chart .chart-presence{fill:var(--sky-600);}
+.construction-chart .chart-exit{fill:var(--emerald-600);}
+.construction-chart .chart-break{fill:#fef3c7;}
+.construction-chart .chart-missing{fill:var(--slate-100);}
+.construction-chart .chart-hit{fill:transparent;cursor:pointer;}
+.construction-chart .chart-selected{stroke:var(--sky-700);stroke-width:1;stroke-dasharray:4 3;}
+.construction-legend{display:flex;flex-wrap:wrap;gap:10px 20px;font-size:12px;color:var(--slate-600);margin:12px 0;}
+.construction-legend span{display:inline-flex;align-items:center;gap:6px;}
+.legend-dot{display:inline-block;width:11px;height:11px;border-radius:3px;}
+.legend-dot.presence{background:var(--sky-600);}.legend-dot.exit{background:var(--emerald-600);}.legend-dot.break{background:#fef3c7;}.legend-dot.missing{background:var(--slate-200);}
+.construction-detail{padding:12px 14px;background:var(--sky-50);border-radius:6px;color:var(--slate-700);font-size:13px;}
+.construction-note{color:var(--slate-600);font-size:12px;margin:10px 0 0;}
+.interval-controls{display:flex;align-items:end;gap:8px;margin:12px 0;}
+.interval-controls .form-group{flex:1;max-width:310px;min-width:0;}
+.construction-two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;}
+.schedule-row{padding:10px 0;border-bottom:1px solid var(--slate-200);font-size:13px;}.schedule-row strong{color:var(--slate-800);}.schedule-row span{display:block;color:var(--slate-600);margin-top:4px;}
+.coverage-number{font-size:26px;font-weight:700;margin:5px 0;color:var(--sky-700);}.coverage-track{height:8px;background:var(--slate-100);border-radius:4px;overflow:hidden;margin:12px 0;}.coverage-track span{display:block;height:100%;background:var(--sky-600);}
+.truck-hours{display:flex;justify-content:space-between;margin-left:160px;color:var(--slate-500);font-size:12px;}
+.truck-row{display:grid;grid-template-columns:150px minmax(0,1fr);gap:10px;align-items:center;margin:9px 0;}
+.truck-name{background:transparent;border:0;text-align:left;font:inherit;color:var(--sky-700);padding:5px 0;font-size:12px;}.truck-name strong,.truck-name small{display:block;}.truck-name small{font-size:12px;color:var(--slate-600);}
+.truck-track{height:34px;position:relative;background:var(--slate-100);border-radius:4px;}
+.truck-track button{position:absolute;top:6px;height:22px;min-width:7px;padding:0;border:0;background:var(--sky-600);border-radius:3px;}
+.truck-track button.pending{background:var(--amber-600);}.truck-row.selected .truck-track button{background:var(--sky-700);box-shadow:0 0 0 2px var(--sky-200,#bae6fd);}
+.construction-table{max-width:100%;overflow-x:auto;overscroll-behavior-inline:contain;}
+.construction-table table{border-collapse:collapse;width:100%;font-size:12px;}
+.construction-table th,.construction-table td{padding:11px 9px;text-align:left;white-space:nowrap;border-bottom:1px solid var(--slate-200);font-variant-numeric:tabular-nums;}
+.construction-table th{color:var(--slate-600);font-weight:600;background:var(--slate-50);}
+.construction-table .selected{background:var(--sky-50);}
+.construction-table button{font:inherit;border:0;background:transparent;color:var(--sky-700);padding:5px 0;text-align:left;}
+.heat-cell button{min-width:40px;min-height:36px;border-radius:4px;font-variant-numeric:tabular-nums;}
+.heat-cell button.partial{border-bottom:2px dashed var(--slate-500);}.heat-cell button.no-data{background:var(--slate-200)!important;}
+.load-row{display:grid;grid-template-columns:140px 1fr 28px;gap:8px;align-items:center;font-size:12px;margin:15px 0;}.load-track{height:14px;background:var(--slate-100);border-radius:3px;overflow:hidden;}.load-track span{height:100%;display:block;background:var(--sky-600);}
+.mobile-nav{flex-wrap:wrap;}
+@media(max-width:1100px){.construction-two{grid-template-columns:1fr;}}
+@media(max-width:600px){.construction-panel,.construction-toolbar{padding:12px;}.construction-kpis{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;}.construction-kpis .kpi-card{padding:12px;}.construction-kpis .kpi-value{font-size:24px;}.truck-row{grid-template-columns:100px minmax(0,1fr);}.truck-hours{margin-left:110px;}.construction-chart{height:235px;}.construction-toolbar .form-group{width:100%;}.construction-two{gap:0;}.load-row{grid-template-columns:120px 1fr 24px;}.construction-title .form-group{width:100%;}}
+@media(pointer:coarse){.construction-main button,.construction-main select,.heat-cell button{min-height:44px;}.truck-track button{top:0;height:44px;}.truck-track{height:44px;}}

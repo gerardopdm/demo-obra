@@ -1,0 +1,10 @@
+name: obra-demo
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.web
+    expose:
+      - "80"
+    restart: unless-stopped

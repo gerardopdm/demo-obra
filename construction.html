@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OBRA | Construcción</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="construction.css">
+  <script src="construction-data.js" defer></script>
+  <script src="construction.js" defer></script>
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <a class="sidebar-brand" href="index.html"><span class="brand-logo">OB</span><span class="brand-text"><strong>OBRA</strong><small>Supervisión de construcción</small></span></a>
+    <div class="sidebar-section"><p class="sidebar-section-title">Obra</p><nav class="sidebar-nav" aria-label="Obra">
+      <a class="sidebar-link" href="index.html">▣ Bitácora visual</a>
+      <a class="sidebar-link" href="supervision.html">◎ Supervisión en sitio</a>
+      <a class="sidebar-link active" href="construction.html" aria-current="page">▤ Construcción</a>
+    </nav></div>
+    <div class="sidebar-footer"><span class="avatar">SG</span><span class="sidebar-user"><strong>Supervisión general</strong><small>Obra · Site Unit Build</small></span></div>
+  </aside>
+  <div class="content">
+    <header class="top-header"><div class="header-titles"><h1>Construcción</h1><p class="header-subtitle">Presencia en obra y movimiento de materiales · Site Unit Build</p></div><span class="header-badge">Datos ficticios · 2026</span></header>
+    <nav class="mobile-nav" aria-label="Pantallas de obra"><a href="index.html">Bitácora visual</a><a href="supervision.html">Supervisión en sitio</a><a href="construction.html" aria-current="page">Construcción</a></nav>
+    <main class="main construction-main">
+      <div class="construction-notice"><strong>Demostración con datos ficticios.</strong> Información independiente de las fotografías. Personas visibles no equivale a asistencia ni productividad; horarios y materiales son simulados.</div>
+      <section class="construction-toolbar card" aria-label="Consultar construcción">
+        <div class="construction-tabs" aria-label="Vista del tablero"><button type="button" id="dayView" class="btn-secondary" aria-pressed="true">Jornada</button><button type="button" id="rangeView" class="btn-secondary" aria-pressed="false">Varios días</button></div>
+        <label class="form-group">Fecha<select id="constructionDate"></select></label>
+        <button id="previousDate" class="btn-secondary" type="button">← Día anterior</button><button id="nextDate" class="btn-secondary" type="button">Día siguiente →</button>
+        <label class="form-group" id="rangeControl" hidden>Comparar<select id="rangeLength"><option value="7">Últimos 7 días</option><option value="14">Últimos 14 días</option><option value="31">Todo el período</option></select></label>
+      </section>
+      <section id="jornadaPanel" aria-label="Jornada seleccionada">
+        <div class="construction-title"><div><h2 id="dailyTitle"></h2><p id="scheduleSummary"></p></div><span class="badge info">Muestras cada 10 min</span></div>
+        <div id="dailyStats" class="construction-kpis"></div>
+        <section class="card construction-panel">
+          <div class="construction-title"><div><h3>Personas visibles durante la jornada</h3><p>Promedio por intervalo · zonas de trabajo cubiertas</p></div><label class="form-group">Agrupar<select id="interval"><option value="10">10 minutos</option><option value="30" selected>30 minutos</option><option value="60">1 hora</option></select></label></div>
+          <div class="construction-legend"><span><i class="legend-dot presence"></i>Personas visibles</span><span><i class="legend-dot break"></i>Pausa / comida programada</span><span><i class="legend-dot missing"></i>Sin datos</span></div>
+          <svg id="presenceChart" class="construction-chart" role="img" aria-label="Promedio de personas visibles por intervalo"></svg>
+          <div class="interval-controls"><button type="button" id="previousInterval" class="btn-secondary" aria-label="Intervalo anterior">←</button><label class="form-group">Explorar horario<select id="selectedInterval"></select></label><button type="button" id="nextInterval" class="btn-secondary" aria-label="Intervalo siguiente">→</button></div>
+          <div id="intervalDetail" class="construction-detail" aria-live="polite"></div>
+          <p class="construction-note">Una caída de visibilidad no confirma descanso. La última presencia no acredita el cierre de la obra.</p>
+        </section>
+        <div class="construction-two">
+          <section class="card construction-panel"><h3>Horario programado</h3><div id="crewSchedule"></div><p class="construction-note">Dos cuadrillas escalonadas; el horario de la obra no es la jornada individual. Se configura según lugar, fecha y condiciones de luz.</p></section>
+          <section class="card construction-panel"><h3>Cobertura y revisión</h3><div id="coveragePanel"></div><p class="construction-note">Sin datos se conserva como hueco, nunca como cero. Accesos: eventos de clips por movimiento; presencia: muestras periódicas.</p></section>
+        </div>
+        <section class="card construction-panel"><div class="construction-title"><h3>Permanencia de camiones</h3><span class="construction-note">Llegada → salida · selecciona una visita</span></div><div class="truck-hours"><span>06:30</span><span>12:30</span><span>19:00</span></div><div id="truckTimeline"></div><div id="truckDetail" class="construction-detail" aria-live="polite"></div></section>
+        <section class="card construction-panel"><h3>Visitas y materiales</h3><div class="construction-table"><table><thead><tr><th scope="col">Visita / vehículo</th><th scope="col">Material / operación</th><th scope="col">Llegada</th><th scope="col">Salida</th><th scope="col">Permanencia</th><th scope="col">Carga al salir</th><th scope="col">Fuente</th></tr></thead><tbody id="visitsTable"></tbody></table></div><p class="construction-note">Materiales: remisión simulada. Carga: observación visual simulada. Tambor cerrado o carga oculta: no verificable. No se estiman toneladas.</p></section>
+      </section>
+      <section id="rangePanel" aria-label="Comparación de jornadas" hidden>
+        <div class="construction-title"><h2 id="rangeTitle"></h2><span class="badge info">Comparar cobertura y tipo de jornada</span></div>
+        <div id="rangeStats" class="construction-kpis"></div>
+        <section class="card construction-panel"><h3>Presencia por fecha y hora</h3><p class="construction-note">Promedio visible por hora. Selecciona una celda para abrir su jornada.</p><div id="presenceHeatmap" class="construction-table"></div><div class="construction-legend"><span><i class="legend-dot presence"></i>Intensidad proporcional al conteo</span><span>0 = cero observado</span><span>— = sin datos</span><span>* = cobertura parcial</span><span>Domingo = sin actividad programada</span></div></section>
+        <div class="construction-two"><section class="card construction-panel"><h3>Máximo visible por día</h3><svg id="peakChart" class="construction-chart" role="img" aria-label="Máximo de personas visibles por jornada"></svg></section><section class="card construction-panel"><h3>Camiones por día</h3><svg id="visitsChart" class="construction-chart" role="img" aria-label="Entradas y salidas de camiones por jornada"></svg><div class="construction-legend"><span><i class="legend-dot presence"></i>Entradas</span><span><i class="legend-dot exit"></i>Salidas</span></div></section></div>
+        <div class="construction-two"><section class="card construction-panel"><h3>Materiales y permanencia</h3><div class="construction-table"><table><thead><tr><th>Material</th><th>Entradas</th><th>Mediana de visita</th></tr></thead><tbody id="materialSummary"></tbody></table></div><p class="construction-note">Duración solo de visitas completadas; asignada al día de entrada.</p></section><section class="card construction-panel"><h3>Carga de camiones al salir</h3><div id="loadSummary"></div><p class="construction-note">Cuenta salidas del período, incluyendo visitas iniciadas antes. “Vacío” es apariencia visual, no certificación.</p></section></div>
+        <section class="card construction-panel"><h3>Comparación de jornadas</h3><div class="construction-table"><table><thead><tr><th>Fecha / turno</th><th>Máximo visible</th><th>Primera presencia</th><th>Última presencia</th><th>Entradas / salidas</th><th>Cobertura</th></tr></thead><tbody id="dailyComparison"></tbody></table></div></section>
+      </section>
+      <footer class="page-footer card"><p>Datos ficticios · 02 sep — 02 oct 2026 · zona horaria America/Mexico_City. No se suman personas entre muestras ni se atribuye actividad real a las fotos de la demo. La hora de cierre permanece sin confirmar.</p><a class="btn-secondary" href="index.html">Volver a bitácora visual</a></footer>
+    </main>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+{
+  "schema": 1,
+  "dataset": "obra-demo-2026",
+  "exportedAt": "2026-10-04T22:02:59.235Z",
+  "photos": {
+    "assets/2026-09-03/frame_0006.jpg": {
+      "boxes": [
+        {
+          "id": "person-1",
+          "type": "person",
+          "confidence": 0.877,
+          "box": [
+            0.71606,
+            0.74351,
+            0.03391,
+            0.1656
+          ],
+          "source": "ai"
+        },
+        {
+          "id": "person-2",
+          "type": "person",
+          "confidence": 0.792,
+          "box": [
+            0.79066,
+            0.74862,
+            0.03396,
+            0.09609
+          ],
+          "source": "ai"
+        },
+        {
+          "id": "person-3",
+          "type": "person",
+          "confidence": 0.608,
+          "box": [
+            0.58226,
+            0.37724,
+            0.01473,
+            0.06775
+          ],
+          "source": "ai"
+        },
+        {
+          "id": "person-4",
+          "type": "person",
+          "confidence": 0.591,
+          "box": [
+            0.1472,
+            0.66566,
+            0.04662,
+            0.13866
+          ],
+          "source": "ai"
+        },
+        {
+          "id": "person-5",
+          "type": "person",
+          "confidence": 0.411,
+          "box": [
+            0.35964,
+            0.33818,
+            0.01171,
+            0.06596
+          ],
+          "source": "ai"
+        },
+        {
+          "id": "person-6",
+          "type": "person",
+          "confidence": 0.382,
+          "box": [
+            0.37682,
+            0.34198,
+            0.01061,
+            0.0493
+          ],
+          "source": "ai"
+        },
+        {
+          "id": "9b003b4d-383b-42df-b7ba-7200470d752d",
+          "type": "truck",
+          "box": [
+            0.39999996885961414,
+            0.3999999861598285,
+            0.15000004671057882,
+            0.20000002768034292
+          ],
+          "source": "manual"
+        }
+      ],
+      "reviewed": true
+    }
+  },
+  "events": [
+    {
+      "id": "769e3228-c4e6-4987-9152-169c357bf4f7",
+      "kind": "entry",
+      "boxId": "9b003b4d-383b-42df-b7ba-7200470d752d",
+      "date": "2026-09-03",
+      "time": "09:40:01",
+      "second": 2.5,
+      "src": "assets/2026-09-03/frame_0006.jpg",
+      "note": "Camión de prueba",
+      "source": "supervisor"
+    },
+    {
+      "id": "582890fd-2722-4182-8591-d746215472af",
+      "kind": "exit",
+      "boxId": "9b003b4d-383b-42df-b7ba-7200470d752d",
+      "date": "2026-09-03",
+      "time": "09:40:01",
+      "second": 2.5,
+      "src": "assets/2026-09-03/frame_0006.jpg",
+      "note": "",
+      "source": "supervisor"
+    }
+  ]
+}

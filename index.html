@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OBRA | Bitácora visual</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="detections.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <a class="sidebar-brand" href="index.html">
+        <span class="brand-logo">OB</span>
+        <span class="brand-text">
+          <strong>OBRA</strong>
+          <small>Supervisión de construcción</small>
+        </span>
+      </a>
+
+      <div class="sidebar-section">
+        <p class="sidebar-section-title">Obra</p>
+        <nav class="sidebar-nav" aria-label="Obra">
+          <a class="sidebar-link active" href="index.html" aria-current="page"><i class="fas fa-camera"></i> Bitácora visual</a>
+          <a class="sidebar-link" href="supervision.html"><i class="fas fa-hard-hat"></i> Supervisión en sitio</a>
+          <a class="sidebar-link" href="construction.html">▤ Construcción</a>
+        </nav>
+      </div>
+
+      <div class="sidebar-footer">
+        <span class="avatar">SG</span>
+        <span class="sidebar-user">
+          <strong>Supervisión general</strong>
+          <small>Obra · Site Unit Build</small>
+        </span>
+      </div>
+    </aside>
+
+    <div class="content">
+      <header class="top-header">
+        <div class="header-titles">
+          <h1>Bitácora de obra</h1>
+          <p class="header-subtitle">Registro fotográfico del avance · Site Unit Build</p>
+        </div>
+        <div class="header-actions">
+          <span class="header-badge"><span class="pulse-dot"></span> Bitácora en línea</span>
+          <time id="headerClock" class="header-clock" datetime="">--:--:--</time>
+        </div>
+      </header>
+
+      <nav class="mobile-nav" aria-label="Pantallas de obra"><a href="index.html" aria-current="page">Bitácora visual</a><a href="supervision.html">Supervisión en sitio</a><a href="construction.html">Construcción</a></nav>
+      <main class="main">
+        <div class="metrics-row">
+          <h2 class="section-title section-title-inline"><i class="fas fa-camera-retro"></i> Registro fotográfico</h2>
+          <div class="kpi-grid kpi-grid-compact">
+            <article class="kpi-card kpi-card-compact c-sky">
+              <div class="kpi-top">
+                <span class="kpi-label">Días registrados</span>
+                <span class="kpi-icon"><i class="fas fa-calendar-days"></i></span>
+              </div>
+              <p class="kpi-value" id="kpiDays">23</p>
+              <span class="kpi-change ok">02 sep — 02 oct 2026</span>
+            </article>
+            <article class="kpi-card kpi-card-compact c-emerald">
+              <div class="kpi-top">
+                <span class="kpi-label">Fotografías</span>
+                <span class="kpi-icon"><i class="fas fa-images"></i></span>
+              </div>
+              <p class="kpi-value" id="kpiPhotos">218</p>
+              <span class="kpi-change ok">Capturas disponibles</span>
+            </article>
+            <article class="kpi-card kpi-card-compact c-violet">
+              <div class="kpi-top">
+                <span class="kpi-label">Consulta</span>
+                <span class="kpi-icon"><i class="fas fa-layer-group"></i></span>
+              </div>
+              <p class="kpi-value kpi-value-sm">Diario</p>
+              <span class="kpi-change warn">Comparar fechas</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="toolbar card">
+          <div class="tabs" role="tablist">
+            <button id="daily" class="active" type="button" role="tab" aria-selected="true">Registro diario</button>
+            <button id="compare" type="button" role="tab" aria-selected="false">Comparar fechas</button>
+          </div>
+          <span class="toolbar-range"><i class="fas fa-clock"></i> 02 sep — 02 oct 2026</span>
+        </div>
+
+        <section id="dailyView" class="workspace card">
+          <div class="day-panel">
+            <div class="aside-title">Días con registro <span id="dayCount">23</span></div>
+            <label class="form-group filter">
+              Buscar fecha
+              <input id="dateFilter" type="date" min="2026-09-02" max="2026-10-02">
+            </label>
+            <button id="clearFilter" class="text-button" type="button">Ver todos los días</button>
+            <nav id="days" class="day-nav" aria-label="Fechas disponibles"></nav>
+            <p id="empty" class="empty-msg" hidden>No hay registro para esta fecha.</p>
+          </div>
+
+          <article class="photo-panel">
+            <div class="photo-heading">
+              <div>
+                <p class="eyebrow" id="dayNumber"></p>
+                <h2 id="selectedDate"></h2>
+              </div>
+              <div class="actions">
+                <button id="prev" class="btn-secondary btn-icon" type="button" aria-label="Día anterior"><i class="fas fa-chevron-left"></i></button>
+                <button id="next" class="btn-secondary btn-icon" type="button" aria-label="Día siguiente"><i class="fas fa-chevron-right"></i></button>
+                <button id="expand" class="btn-primary" type="button"><i class="fas fa-up-right-and-down-left-from-center"></i> Ampliar</button>
+              </div>
+            </div>
+
+            <button id="heroButton" class="hero-button" type="button" aria-label="Ampliar fotografía">
+              <img id="hero" alt="Registro de avance de obra">
+              <svg id="heroOverlay" class="people-overlay" viewBox="0 0 1280 720" aria-label="Personas y camiones detectados"></svg>
+            </button>
+            <label class="people-toggle"><input id="showIndexPeople" type="checkbox" checked> Mostrar personas y camiones <span id="indexPeopleCount"></span></label>
+
+            <div class="caption">
+              <span id="photoCaption" class="caption-mono"></span>
+              <a id="download" class="btn-link" download><i class="fas fa-download"></i> Descargar fotografía</a>
+            </div>
+
+            <div class="strip-heading">
+              <h3>Fotografías del día</h3>
+              <span id="count" class="badge info"></span>
+            </div>
+            <div id="thumbs" class="thumbs"></div>
+            <p class="note"><i class="fas fa-circle-info"></i> Fechas adaptadas para demostración a septiembre–octubre de 2026. Se conservan las horas originales de la cámara y los intervalos entre días.</p>
+          </article>
+        </section>
+
+        <section id="compareView" class="card compare-section" hidden>
+          <div class="compare-controls">
+            <label class="form-group">
+              Fecha inicial
+              <select id="from"></select>
+            </label>
+            <span class="compare-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+            <label class="form-group">
+              Fecha final
+              <select id="to"></select>
+            </label>
+          </div>
+          <div class="comparison">
+            <figure>
+              <div class="overlay-photo"><img id="before" alt="Obra en fecha inicial"><svg id="beforeOverlay" class="people-overlay" viewBox="0 0 1280 720" aria-label="Personas y camiones detectados en fecha inicial"></svg></div>
+              <figcaption id="beforeLabel"></figcaption>
+            </figure>
+            <figure>
+              <div class="overlay-photo"><img id="after" alt="Obra en fecha final"><svg id="afterOverlay" class="people-overlay" viewBox="0 0 1280 720" aria-label="Personas y camiones detectados en fecha final"></svg></div>
+              <figcaption id="afterLabel"></figcaption>
+            </figure>
+          </div>
+          <p class="note"><i class="fas fa-circle-info"></i> Comparación visual de fotografías representativas. La cámara cambia ligeramente de encuadre durante el registro.</p>
+        </section>
+
+        <footer class="page-footer card">
+          <div class="footer-brand">
+            <span class="badge info">BITÁCORA VISUAL</span>
+            <span class="footer-site">Site Unit Build</span>
+          </div>
+          <p>Registro fotográfico de demostración. Solo se muestran fechas con capturas disponibles. No es un registro continuo ni una medición del porcentaje de avance.</p>
+          
+        </footer>
+      </main>
+    </div>
+  </div>
+
+  <dialog id="lightbox">
+    <button id="close" class="btn-secondary" type="button" aria-label="Cerrar fotografía"><i class="fas fa-xmark"></i> Cerrar</button>
+    <div class="overlay-photo"><img id="fullPhoto" alt="Fotografía de obra ampliada"><svg id="fullOverlay" class="people-overlay" viewBox="0 0 1280 720" aria-label="Personas y camiones detectados en fotografía ampliada"></svg></div>
+    <p id="fullLabel" class="lightbox-label"></p>
+  </dialog>
+</body>
+</html>

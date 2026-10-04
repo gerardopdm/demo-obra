@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OBRA | Supervisión en sitio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="supervision.css">
+  <script src="data.js" defer></script>
+  <script src="detections.js" defer></script>
+  <script src="supervision.js" defer></script>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <a class="sidebar-brand" href="index.html"><span class="brand-logo">OB</span><span class="brand-text"><strong>OBRA</strong><small>Supervisión de construcción</small></span></a>
+      <div class="sidebar-section">
+        <p class="sidebar-section-title">Obra</p>
+        <nav class="sidebar-nav" aria-label="Obra">
+          <a class="sidebar-link" href="index.html">▣ Bitácora visual</a>
+          <a class="sidebar-link active" href="supervision.html" aria-current="page">◎ Supervisión en sitio</a>
+          <a class="sidebar-link" href="construction.html">▤ Construcción</a>
+        </nav>
+      </div>
+      <div class="sidebar-footer"><span class="avatar">SG</span><span class="sidebar-user"><strong>Supervisión general</strong><small>Obra · Site Unit Build</small></span></div>
+    </aside>
+    <div class="content">
+      <header class="top-header"><div class="header-titles"><h1>Supervisión en sitio</h1><p class="header-subtitle">Personas visibles y movimientos de camiones · Site Unit Build</p></div><div class="header-actions"><span class="header-badge">Fechas demo · 2026</span></div></header>
+      <nav class="mobile-nav" aria-label="Pantallas de obra"><a href="index.html">Bitácora visual</a><a href="supervision.html">Supervisión en sitio</a><a href="construction.html">Construcción</a></nav>
+      <main class="main supervision-main">
+        <div class="supervision-notice">Detecciones automáticas pendientes de revisión. Las entradas y salidas son movimientos confirmados por el supervisor; el timelapse puede omitir cruces del acceso. Un conteo de 0 confirmados no acredita que no hubo movimientos.</div>
+        <section class="supervision-toolbar card" aria-label="Navegación y revisión">
+          <label class="form-group">Fecha de supervisión<select id="supervisionDay"></select></label>
+          <button id="prevDay" class="btn-secondary" type="button">← Día anterior</button>
+          <button id="nextDay" class="btn-secondary" type="button">Día siguiente →</button>
+          <button id="exportReview" class="btn-secondary" type="button">Exportar revisión</button>
+          <label class="btn-secondary import-label">Importar revisión<input id="importReview" type="file" accept=".json,application/json" hidden></label>
+          <span id="importStatus" role="status"></span>
+        </section>
+        <section class="supervision-kpis" aria-label="Conteos de supervisión">
+          <article class="kpi-card c-emerald"><span class="kpi-label">Camiones que entraron</span><p class="kpi-value" id="entriesCount">0</p><span class="kpi-change">Movimientos confirmados del día</span></article>
+          <article class="kpi-card c-sky"><span class="kpi-label">Camiones que salieron</span><p class="kpi-value" id="exitsCount">0</p><span class="kpi-change">Movimientos confirmados del día</span></article>
+          <article class="kpi-card c-violet"><span class="kpi-label">Personas a la vista</span><p class="kpi-value" id="peopleCount">—</p><span class="kpi-change" id="peopleStatus"></span></article>
+          <article class="kpi-card c-sky"><span class="kpi-label">Camiones a la vista</span><p class="kpi-value" id="trucksCount">—</p><span class="kpi-change">En la captura seleccionada</span></article>
+        </section>
+        <div class="supervision-grid">
+          <div class="monitor-card card">
+            <div class="monitor-heading"><div><h2 id="supervisionDate"></h2><time class="mono" id="supervisionTime"></time></div><span class="badge warning" id="reviewBadge"></span></div>
+            <div class="monitor-viewport" id="monitorViewport"><div class="monitor-image" id="monitorImage"><img id="supervisionPhoto" alt="Obra"><svg id="detectionOverlay" viewBox="0 0 1280 720" preserveAspectRatio="none" aria-label="Objetos propuestos y anotaciones del supervisor"></svg></div></div>
+            <div class="monitor-controls"><label><input id="showOverlays" type="checkbox" checked> Mostrar recuadros</label><label><input id="showPeople" type="checkbox" checked> Personas</label><label><input id="showTrucks" type="checkbox" checked> Camiones</label><label>Zoom <input id="imageZoom" type="range" min="100" max="300" value="100" step="25" aria-label="Ampliar imagen y recuadros"><output id="zoomValue">100%</output></label></div>
+            <div class="capture-navigation"><button id="prevCapture" class="btn-secondary" type="button" aria-label="Captura anterior">←</button><button id="playSequence" class="btn-secondary" type="button">▶ Reproducir</button><input id="captureSlider" type="range" min="0" max="0" value="0" step="1" aria-label="Desplazarse por las capturas del día"><button id="nextCapture" class="btn-secondary" type="button" aria-label="Captura siguiente">→</button></div>
+            <p class="note" id="photoPosition"></p>
+            <p class="note" id="drawHint"></p>
+          </div>
+          <aside class="review-panel card" aria-label="Revisión de captura">
+            <h3>Revisión del supervisor</h3>
+            <p id="reviewCoverage"></p>
+            <p>Verifica los objetos y corrige los recuadros antes de confirmar. Las máquinas de obra pueden confundirse con camiones.</p>
+            <div class="button-pair"><button id="addPerson" class="btn-secondary" type="button">+ Persona</button><button id="addTruck" class="btn-secondary" type="button">+ Camión</button></div>
+            <p id="selectedObject"></p>
+            <button id="removeBox" class="btn-secondary" type="button" disabled>Quitar objeto seleccionado</button>
+            <button id="reviewPhoto" class="btn-primary" type="button">Confirmar objetos de esta captura</button>
+            <hr>
+            <h3>Movimiento de camión</h3>
+            <p>Selecciona un camión y registra el movimiento observado. Ver un camión estacionado no confirma una entrada o salida.</p>
+            <label class="form-group">Referencia o nota<textarea id="eventNote" rows="2" maxlength="240" placeholder="Ej. camión de materiales · acceso principal"></textarea></label>
+            <div class="button-pair"><button id="entry" class="btn-secondary" type="button" disabled>↘ Entrada</button><button id="exit" class="btn-secondary" type="button" disabled>↗ Salida</button></div>
+            <p id="saveStatus" role="status"></p>
+          </aside>
+        </div>
+        <section class="timeline-section card" aria-label="Línea de tiempo de la obra">
+          <div class="timeline-heading"><h3>Línea de tiempo por fecha</h3><span class="badge info">02 sep — 02 oct 2026</span></div>
+          <nav id="dailyTimeline" class="daily-timeline" aria-label="Días registrados"></nav>
+          <p class="note">Se conservan los días sin registro. Usa la fecha para cambiar de jornada y las flechas ← → para recorrer las capturas.</p>
+          <div class="timeline-heading"><label class="form-group">Mostrar<select id="activityFilter"><option value="all">Todas las capturas</option><option value="person">Con personas detectadas</option><option value="truck">Con camiones detectados</option><option value="events">Con movimientos confirmados</option><option value="pending">Pendientes de revisión</option></select></label><label>Detalle de miniaturas<input id="timelineZoom" type="range" min="110" max="250" value="150" aria-label="Tamaño de miniaturas"></label></div>
+          <div id="captureTimeline" class="capture-timeline"></div><p id="noCaptures" class="note" hidden>No hay capturas para este filtro. Cambia el filtro para continuar.</p>
+        </section>
+        <section class="events-card card"><h3>Entradas y salidas confirmadas del día</h3><div id="eventList"></div><p id="noEvents" class="note">No hay movimientos confirmados. Revisa las capturas y registra los cruces observados.</p></section>
+        <footer class="page-footer card"><p>Fechas adaptadas para demostración; horas originales de cámara. Personas y camiones visibles se cuentan por captura, sin sumar repetidamente el mismo objeto entre fotografías. La revisión se guarda en este navegador; expórtala para conservarla o compartirla.</p><a class="btn-secondary" href="index.html">Volver a bitácora visual</a></footer>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

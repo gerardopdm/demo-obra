@@ -1,0 +1,15 @@
+# Entorno local / IDE
+.cursor/
+.env
+.env.*
+
+# Artefactos pesados (no necesarios para la demo web)
+review/runtime/
+*.mp4
+*.zip
+bitacora-obra.zip
+
+# Logs y caché
+**/__pycache__/
+**/*.pyc
+**/*.log

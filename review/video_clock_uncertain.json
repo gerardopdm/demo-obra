@@ -1,0 +1,422 @@
+[
+  {
+    "frame": 63,
+    "second": 2.1,
+    "date": "2026-09-03",
+    "time": null,
+    "raw": [
+      "00:00:01",
+      "03-12-2020 00:00:01",
+      "00:00:01"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 156,
+    "second": 5.2,
+    "date": "2026-09-04",
+    "time": null,
+    "raw": [
+      "06:19:58",
+      "04-12:2020 06: 19:58",
+      "06:19:58"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 198,
+    "second": 6.6,
+    "date": "2026-09-04",
+    "time": null,
+    "raw": [
+      "08:39:58",
+      "04-12-2020 08:39:58",
+      "08:39:58"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 561,
+    "second": 18.7,
+    "date": "2026-09-08",
+    "time": null,
+    "raw": [
+      "1139:47",
+      "08-12-2020 11:39:47",
+      "1139:47"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 579,
+    "second": 19.3,
+    "date": "2026-09-08",
+    "time": null,
+    "raw": [
+      "12:39:47",
+      "08-12-2020 12:39:47",
+      "12:39:47"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 627,
+    "second": 20.9,
+    "date": "2026-09-09",
+    "time": null,
+    "raw": [
+      "06:49:45",
+      "09-12-2020 06:49:45",
+      "06:49:45"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 657,
+    "second": 21.9,
+    "date": "2026-09-09",
+    "time": null,
+    "raw": [
+      "08:09:45",
+      "09-12-2020 03:29:45",
+      "08:09:45"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 828,
+    "second": 27.6,
+    "date": "2026-09-10",
+    "time": null,
+    "raw": [
+      "00:10:01",
+      "10:12-2020 00:10:01",
+      "00:10:01"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 831,
+    "second": 27.7,
+    "date": "2026-09-10",
+    "time": null,
+    "raw": [
+      "00:20:01",
+      "10:12-2020 00:20:01",
+      "00:20:01"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 834,
+    "second": 27.8,
+    "date": "2026-09-10",
+    "time": null,
+    "raw": [
+      "00:30:01",
+      "10:12-2020 00:30:01",
+      "00:30:01"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 882,
+    "second": 29.4,
+    "date": "2026-09-10",
+    "time": null,
+    "raw": [
+      "1220:01",
+      "10-12-2020 12 20:01",
+      "1220:01"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 891,
+    "second": 29.7,
+    "date": "2026-09-10",
+    "time": null,
+    "raw": [
+      "12:30:01",
+      "10-12-2020 12:30:01",
+      "12:30:01"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 912,
+    "second": 30.4,
+    "date": "2026-09-10",
+    "time": null,
+    "raw": [
+      "06:19:59",
+      "11-12-2020 06:19:59",
+      "06:19:59"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 1074,
+    "second": 35.8,
+    "date": "2026-09-14",
+    "time": null,
+    "raw": [
+      "06:09:50",
+      "14-12-2020 06:09:50",
+      "06:09:50"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 1167,
+    "second": 38.9,
+    "date": "2026-09-14",
+    "time": null,
+    "raw": [
+      ".49:50",
+      "14-12-202049:50",
+      ".49:50"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 1521,
+    "second": 50.7,
+    "date": "2026-09-16",
+    "time": null,
+    "raw": [
+      "13.9:44",
+      "16-12-2020 13. n9:44",
+      "13.\u03bc9:44"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 1551,
+    "second": 51.7,
+    "date": "2026-09-17",
+    "time": null,
+    "raw": [
+      "06:10:02",
+      "17:12:2020 06:0:02",
+      "06:10:02"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 1554,
+    "second": 51.8,
+    "date": "2026-09-17",
+    "time": null,
+    "raw": [
+      "06:60:02",
+      "17:12:2020 06:00:02",
+      "06:60:02"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 1587,
+    "second": 52.9,
+    "date": "2026-09-17",
+    "time": null,
+    "raw": [
+      "08 ~ 0:02",
+      "17:12:2020 08 ~ 0:02",
+      "08~ 0:02"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 1593,
+    "second": 53.1,
+    "date": "2026-09-17",
+    "time": null,
+    "raw": [
+      "09 60:02",
+      "17: 12:2020 00 00:02",
+      "09 60:02"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 1662,
+    "second": 55.4,
+    "date": "2026-09-17",
+    "time": null,
+    "raw": [
+      "12:30:01",
+      "17-12-2020 12:30:01",
+      "12:30:01"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 1857,
+    "second": 61.9,
+    "date": "2026-09-18",
+    "time": null,
+    "raw": [
+      "14.@9:58",
+      "18-12-2020 14:@9:58",
+      "14.@9:58"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 1869,
+    "second": 62.3,
+    "date": "2026-09-21",
+    "time": null,
+    "raw": [
+      "06:79:51",
+      "21: 12-2020 06:79:51",
+      "06:79:51"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 1872,
+    "second": 62.4,
+    "date": "2026-09-21",
+    "time": null,
+    "raw": [
+      "06:79:51",
+      "21: 12-2020 06:79:51",
+      "06:79:51"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 1908,
+    "second": 63.6,
+    "date": "2026-09-21",
+    "time": null,
+    "raw": [
+      "08.49 51",
+      "21-12-2020 08.49 51",
+      "08.49 51"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 1962,
+    "second": 65.4,
+    "date": "2026-09-21",
+    "time": null,
+    "raw": [
+      "1149:50",
+      "21-12-2020 1149:50",
+      "1149:50"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 2214,
+    "second": 73.8,
+    "date": "2026-09-23",
+    "time": null,
+    "raw": [
+      "Q3:09:45",
+      "23:12-2020 03:09:45",
+      "Q3:09:45"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 2217,
+    "second": 73.9,
+    "date": "2026-09-23",
+    "time": null,
+    "raw": [
+      "03:19:45",
+      "23:12-2020 03:19:45",
+      "03:19:45"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 2223,
+    "second": 74.1,
+    "date": "2026-09-23",
+    "time": null,
+    "raw": [
+      "Q3:29:45",
+      "23-12-2020 03:29:45",
+      "Q3:29:45"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 2226,
+    "second": 74.2,
+    "date": "2026-09-23",
+    "time": null,
+    "raw": [
+      "03:19:45",
+      "23-12-2020 03:49:45",
+      "03:19:45"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 2229,
+    "second": 74.3,
+    "date": "2026-09-23",
+    "time": null,
+    "raw": [
+      "03:59:45",
+      "23-12-2020 03:59:45",
+      "03:59:45"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 2232,
+    "second": 74.4,
+    "date": "2026-09-23",
+    "time": null,
+    "raw": [
+      "03:09:45",
+      "23-12-2020 03:29:45",
+      "03:09:45"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 2238,
+    "second": 74.6,
+    "date": "2026-09-23",
+    "time": null,
+    "raw": [
+      "09:29:45",
+      "23:12-2020 09 29:45",
+      "09:29:45"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 2241,
+    "second": 74.7,
+    "date": "2026-09-23",
+    "time": null,
+    "raw": [
+      "09:29:45",
+      "23-12-2020 09-29:45",
+      "09:29:45"
+    ],
+    "verifiedAnchor": false
+  },
+  {
+    "frame": 2253,
+    "second": 75.1,
+    "date": "2026-09-23",
+    "time": null,
+    "raw": [
+      "1019:45",
+      "23-12-2020 10 19:45",
+      "1019:45"
+    ],
+    "verifiedAnchor": false
+  }
+]

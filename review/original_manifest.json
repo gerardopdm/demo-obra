@@ -1,0 +1,1016 @@
+{
+  "source": "Site-Unit-Build_001_720p.mp4",
+  "method": "Muestreo a 2 imágenes por segundo de video. Fechas revisadas visualmente en timestamp DD-MM-AAAA. No se infieren días ausentes.",
+  "days": [
+    {
+      "date": "2020-12-02",
+      "cover": 0,
+      "photos": [
+        {
+          "src": "assets/2020-12-02/frame_0001.jpg",
+          "second": 0.0
+        }
+      ]
+    },
+    {
+      "date": "2020-12-03",
+      "cover": 7,
+      "photos": [
+        {
+          "src": "assets/2020-12-03/frame_0002.jpg",
+          "second": 0.5
+        },
+        {
+          "src": "assets/2020-12-03/frame_0003.jpg",
+          "second": 1.0
+        },
+        {
+          "src": "assets/2020-12-03/frame_0004.jpg",
+          "second": 1.5
+        },
+        {
+          "src": "assets/2020-12-03/frame_0005.jpg",
+          "second": 2.0
+        },
+        {
+          "src": "assets/2020-12-03/frame_0006.jpg",
+          "second": 2.5
+        },
+        {
+          "src": "assets/2020-12-03/frame_0007.jpg",
+          "second": 3.0
+        },
+        {
+          "src": "assets/2020-12-03/frame_0008.jpg",
+          "second": 3.5
+        },
+        {
+          "src": "assets/2020-12-03/frame_0009.jpg",
+          "second": 4.0
+        },
+        {
+          "src": "assets/2020-12-03/frame_0010.jpg",
+          "second": 4.5
+        }
+      ]
+    },
+    {
+      "date": "2020-12-04",
+      "cover": 8,
+      "photos": [
+        {
+          "src": "assets/2020-12-04/frame_0011.jpg",
+          "second": 5.0
+        },
+        {
+          "src": "assets/2020-12-04/frame_0012.jpg",
+          "second": 5.5
+        },
+        {
+          "src": "assets/2020-12-04/frame_0013.jpg",
+          "second": 6.0
+        },
+        {
+          "src": "assets/2020-12-04/frame_0014.jpg",
+          "second": 6.5
+        },
+        {
+          "src": "assets/2020-12-04/frame_0015.jpg",
+          "second": 7.0
+        },
+        {
+          "src": "assets/2020-12-04/frame_0016.jpg",
+          "second": 7.5
+        },
+        {
+          "src": "assets/2020-12-04/frame_0017.jpg",
+          "second": 8.0
+        },
+        {
+          "src": "assets/2020-12-04/frame_0018.jpg",
+          "second": 8.5
+        },
+        {
+          "src": "assets/2020-12-04/frame_0019.jpg",
+          "second": 9.0
+        },
+        {
+          "src": "assets/2020-12-04/frame_0020.jpg",
+          "second": 9.5
+        },
+        {
+          "src": "assets/2020-12-04/frame_0021.jpg",
+          "second": 10.0
+        }
+      ]
+    },
+    {
+      "date": "2020-12-07",
+      "cover": 6,
+      "photos": [
+        {
+          "src": "assets/2020-12-07/frame_0022.jpg",
+          "second": 10.5
+        },
+        {
+          "src": "assets/2020-12-07/frame_0023.jpg",
+          "second": 11.0
+        },
+        {
+          "src": "assets/2020-12-07/frame_0024.jpg",
+          "second": 11.5
+        },
+        {
+          "src": "assets/2020-12-07/frame_0025.jpg",
+          "second": 12.0
+        },
+        {
+          "src": "assets/2020-12-07/frame_0026.jpg",
+          "second": 12.5
+        },
+        {
+          "src": "assets/2020-12-07/frame_0027.jpg",
+          "second": 13.0
+        },
+        {
+          "src": "assets/2020-12-07/frame_0028.jpg",
+          "second": 13.5
+        },
+        {
+          "src": "assets/2020-12-07/frame_0029.jpg",
+          "second": 14.0
+        },
+        {
+          "src": "assets/2020-12-07/frame_0030.jpg",
+          "second": 14.5
+        },
+        {
+          "src": "assets/2020-12-07/frame_0031.jpg",
+          "second": 15.0
+        }
+      ]
+    },
+    {
+      "date": "2020-12-08",
+      "cover": 6,
+      "photos": [
+        {
+          "src": "assets/2020-12-08/frame_0032.jpg",
+          "second": 15.5
+        },
+        {
+          "src": "assets/2020-12-08/frame_0033.jpg",
+          "second": 16.0
+        },
+        {
+          "src": "assets/2020-12-08/frame_0034.jpg",
+          "second": 16.5
+        },
+        {
+          "src": "assets/2020-12-08/frame_0035.jpg",
+          "second": 17.0
+        },
+        {
+          "src": "assets/2020-12-08/frame_0036.jpg",
+          "second": 17.5
+        },
+        {
+          "src": "assets/2020-12-08/frame_0037.jpg",
+          "second": 18.0
+        },
+        {
+          "src": "assets/2020-12-08/frame_0038.jpg",
+          "second": 18.5
+        },
+        {
+          "src": "assets/2020-12-08/frame_0039.jpg",
+          "second": 19.0
+        },
+        {
+          "src": "assets/2020-12-08/frame_0040.jpg",
+          "second": 19.5
+        },
+        {
+          "src": "assets/2020-12-08/frame_0041.jpg",
+          "second": 20.0
+        }
+      ]
+    },
+    {
+      "date": "2020-12-09",
+      "cover": 7,
+      "photos": [
+        {
+          "src": "assets/2020-12-09/frame_0042.jpg",
+          "second": 20.5
+        },
+        {
+          "src": "assets/2020-12-09/frame_0043.jpg",
+          "second": 21.0
+        },
+        {
+          "src": "assets/2020-12-09/frame_0044.jpg",
+          "second": 21.5
+        },
+        {
+          "src": "assets/2020-12-09/frame_0045.jpg",
+          "second": 22.0
+        },
+        {
+          "src": "assets/2020-12-09/frame_0046.jpg",
+          "second": 22.5
+        },
+        {
+          "src": "assets/2020-12-09/frame_0047.jpg",
+          "second": 23.0
+        },
+        {
+          "src": "assets/2020-12-09/frame_0048.jpg",
+          "second": 23.5
+        },
+        {
+          "src": "assets/2020-12-09/frame_0049.jpg",
+          "second": 24.0
+        },
+        {
+          "src": "assets/2020-12-09/frame_0050.jpg",
+          "second": 24.5
+        },
+        {
+          "src": "assets/2020-12-09/frame_0051.jpg",
+          "second": 25.0
+        },
+        {
+          "src": "assets/2020-12-09/frame_0052.jpg",
+          "second": 25.5
+        }
+      ]
+    },
+    {
+      "date": "2020-12-10",
+      "cover": 6,
+      "photos": [
+        {
+          "src": "assets/2020-12-10/frame_0053.jpg",
+          "second": 26.0
+        },
+        {
+          "src": "assets/2020-12-10/frame_0054.jpg",
+          "second": 26.5
+        },
+        {
+          "src": "assets/2020-12-10/frame_0055.jpg",
+          "second": 27.0
+        },
+        {
+          "src": "assets/2020-12-10/frame_0056.jpg",
+          "second": 27.5
+        },
+        {
+          "src": "assets/2020-12-10/frame_0057.jpg",
+          "second": 28.0
+        },
+        {
+          "src": "assets/2020-12-10/frame_0058.jpg",
+          "second": 28.5
+        },
+        {
+          "src": "assets/2020-12-10/frame_0059.jpg",
+          "second": 29.0
+        },
+        {
+          "src": "assets/2020-12-10/frame_0060.jpg",
+          "second": 29.5
+        },
+        {
+          "src": "assets/2020-12-10/frame_0061.jpg",
+          "second": 30.0
+        }
+      ]
+    },
+    {
+      "date": "2020-12-11",
+      "cover": 7,
+      "photos": [
+        {
+          "src": "assets/2020-12-11/frame_0062.jpg",
+          "second": 30.5
+        },
+        {
+          "src": "assets/2020-12-11/frame_0063.jpg",
+          "second": 31.0
+        },
+        {
+          "src": "assets/2020-12-11/frame_0064.jpg",
+          "second": 31.5
+        },
+        {
+          "src": "assets/2020-12-11/frame_0065.jpg",
+          "second": 32.0
+        },
+        {
+          "src": "assets/2020-12-11/frame_0066.jpg",
+          "second": 32.5
+        },
+        {
+          "src": "assets/2020-12-11/frame_0067.jpg",
+          "second": 33.0
+        },
+        {
+          "src": "assets/2020-12-11/frame_0068.jpg",
+          "second": 33.5
+        },
+        {
+          "src": "assets/2020-12-11/frame_0069.jpg",
+          "second": 34.0
+        },
+        {
+          "src": "assets/2020-12-11/frame_0070.jpg",
+          "second": 34.5
+        },
+        {
+          "src": "assets/2020-12-11/frame_0071.jpg",
+          "second": 35.0
+        }
+      ]
+    },
+    {
+      "date": "2020-12-14",
+      "cover": 7,
+      "photos": [
+        {
+          "src": "assets/2020-12-14/frame_0072.jpg",
+          "second": 35.5
+        },
+        {
+          "src": "assets/2020-12-14/frame_0073.jpg",
+          "second": 36.0
+        },
+        {
+          "src": "assets/2020-12-14/frame_0074.jpg",
+          "second": 36.5
+        },
+        {
+          "src": "assets/2020-12-14/frame_0075.jpg",
+          "second": 37.0
+        },
+        {
+          "src": "assets/2020-12-14/frame_0076.jpg",
+          "second": 37.5
+        },
+        {
+          "src": "assets/2020-12-14/frame_0077.jpg",
+          "second": 38.0
+        },
+        {
+          "src": "assets/2020-12-14/frame_0078.jpg",
+          "second": 38.5
+        },
+        {
+          "src": "assets/2020-12-14/frame_0079.jpg",
+          "second": 39.0
+        },
+        {
+          "src": "assets/2020-12-14/frame_0080.jpg",
+          "second": 39.5
+        },
+        {
+          "src": "assets/2020-12-14/frame_0081.jpg",
+          "second": 40.0
+        },
+        {
+          "src": "assets/2020-12-14/frame_0082.jpg",
+          "second": 40.5
+        }
+      ]
+    },
+    {
+      "date": "2020-12-15",
+      "cover": 7,
+      "photos": [
+        {
+          "src": "assets/2020-12-15/frame_0083.jpg",
+          "second": 41.0
+        },
+        {
+          "src": "assets/2020-12-15/frame_0084.jpg",
+          "second": 41.5
+        },
+        {
+          "src": "assets/2020-12-15/frame_0085.jpg",
+          "second": 42.0
+        },
+        {
+          "src": "assets/2020-12-15/frame_0086.jpg",
+          "second": 42.5
+        },
+        {
+          "src": "assets/2020-12-15/frame_0087.jpg",
+          "second": 43.0
+        },
+        {
+          "src": "assets/2020-12-15/frame_0088.jpg",
+          "second": 43.5
+        },
+        {
+          "src": "assets/2020-12-15/frame_0089.jpg",
+          "second": 44.0
+        },
+        {
+          "src": "assets/2020-12-15/frame_0090.jpg",
+          "second": 44.5
+        },
+        {
+          "src": "assets/2020-12-15/frame_0091.jpg",
+          "second": 45.0
+        },
+        {
+          "src": "assets/2020-12-15/frame_0092.jpg",
+          "second": 45.5
+        }
+      ]
+    },
+    {
+      "date": "2020-12-16",
+      "cover": 7,
+      "photos": [
+        {
+          "src": "assets/2020-12-16/frame_0093.jpg",
+          "second": 46.0
+        },
+        {
+          "src": "assets/2020-12-16/frame_0094.jpg",
+          "second": 46.5
+        },
+        {
+          "src": "assets/2020-12-16/frame_0095.jpg",
+          "second": 47.0
+        },
+        {
+          "src": "assets/2020-12-16/frame_0096.jpg",
+          "second": 47.5
+        },
+        {
+          "src": "assets/2020-12-16/frame_0097.jpg",
+          "second": 48.0
+        },
+        {
+          "src": "assets/2020-12-16/frame_0098.jpg",
+          "second": 48.5
+        },
+        {
+          "src": "assets/2020-12-16/frame_0099.jpg",
+          "second": 49.0
+        },
+        {
+          "src": "assets/2020-12-16/frame_0100.jpg",
+          "second": 49.5
+        },
+        {
+          "src": "assets/2020-12-16/frame_0101.jpg",
+          "second": 50.0
+        },
+        {
+          "src": "assets/2020-12-16/frame_0102.jpg",
+          "second": 50.5
+        },
+        {
+          "src": "assets/2020-12-16/frame_0103.jpg",
+          "second": 51.0
+        }
+      ]
+    },
+    {
+      "date": "2020-12-17",
+      "cover": 7,
+      "photos": [
+        {
+          "src": "assets/2020-12-17/frame_0104.jpg",
+          "second": 51.5
+        },
+        {
+          "src": "assets/2020-12-17/frame_0105.jpg",
+          "second": 52.0
+        },
+        {
+          "src": "assets/2020-12-17/frame_0106.jpg",
+          "second": 52.5
+        },
+        {
+          "src": "assets/2020-12-17/frame_0107.jpg",
+          "second": 53.0
+        },
+        {
+          "src": "assets/2020-12-17/frame_0108.jpg",
+          "second": 53.5
+        },
+        {
+          "src": "assets/2020-12-17/frame_0109.jpg",
+          "second": 54.0
+        },
+        {
+          "src": "assets/2020-12-17/frame_0110.jpg",
+          "second": 54.5
+        },
+        {
+          "src": "assets/2020-12-17/frame_0111.jpg",
+          "second": 55.0
+        },
+        {
+          "src": "assets/2020-12-17/frame_0112.jpg",
+          "second": 55.5
+        },
+        {
+          "src": "assets/2020-12-17/frame_0113.jpg",
+          "second": 56.0
+        },
+        {
+          "src": "assets/2020-12-17/frame_0114.jpg",
+          "second": 56.5
+        }
+      ]
+    },
+    {
+      "date": "2020-12-18",
+      "cover": 7,
+      "photos": [
+        {
+          "src": "assets/2020-12-18/frame_0115.jpg",
+          "second": 57.0
+        },
+        {
+          "src": "assets/2020-12-18/frame_0116.jpg",
+          "second": 57.5
+        },
+        {
+          "src": "assets/2020-12-18/frame_0117.jpg",
+          "second": 58.0
+        },
+        {
+          "src": "assets/2020-12-18/frame_0118.jpg",
+          "second": 58.5
+        },
+        {
+          "src": "assets/2020-12-18/frame_0119.jpg",
+          "second": 59.0
+        },
+        {
+          "src": "assets/2020-12-18/frame_0120.jpg",
+          "second": 59.5
+        },
+        {
+          "src": "assets/2020-12-18/frame_0121.jpg",
+          "second": 60.0
+        },
+        {
+          "src": "assets/2020-12-18/frame_0122.jpg",
+          "second": 60.5
+        },
+        {
+          "src": "assets/2020-12-18/frame_0123.jpg",
+          "second": 61.0
+        },
+        {
+          "src": "assets/2020-12-18/frame_0124.jpg",
+          "second": 61.5
+        }
+      ]
+    },
+    {
+      "date": "2020-12-21",
+      "cover": 7,
+      "photos": [
+        {
+          "src": "assets/2020-12-21/frame_0125.jpg",
+          "second": 62.0
+        },
+        {
+          "src": "assets/2020-12-21/frame_0126.jpg",
+          "second": 62.5
+        },
+        {
+          "src": "assets/2020-12-21/frame_0127.jpg",
+          "second": 63.0
+        },
+        {
+          "src": "assets/2020-12-21/frame_0128.jpg",
+          "second": 63.5
+        },
+        {
+          "src": "assets/2020-12-21/frame_0129.jpg",
+          "second": 64.0
+        },
+        {
+          "src": "assets/2020-12-21/frame_0130.jpg",
+          "second": 64.5
+        },
+        {
+          "src": "assets/2020-12-21/frame_0131.jpg",
+          "second": 65.0
+        },
+        {
+          "src": "assets/2020-12-21/frame_0132.jpg",
+          "second": 65.5
+        },
+        {
+          "src": "assets/2020-12-21/frame_0133.jpg",
+          "second": 66.0
+        },
+        {
+          "src": "assets/2020-12-21/frame_0134.jpg",
+          "second": 66.5
+        },
+        {
+          "src": "assets/2020-12-21/frame_0135.jpg",
+          "second": 67.0
+        }
+      ]
+    },
+    {
+      "date": "2020-12-22",
+      "cover": 7,
+      "photos": [
+        {
+          "src": "assets/2020-12-22/frame_0136.jpg",
+          "second": 67.5
+        },
+        {
+          "src": "assets/2020-12-22/frame_0137.jpg",
+          "second": 68.0
+        },
+        {
+          "src": "assets/2020-12-22/frame_0138.jpg",
+          "second": 68.5
+        },
+        {
+          "src": "assets/2020-12-22/frame_0139.jpg",
+          "second": 69.0
+        },
+        {
+          "src": "assets/2020-12-22/frame_0140.jpg",
+          "second": 69.5
+        },
+        {
+          "src": "assets/2020-12-22/frame_0141.jpg",
+          "second": 70.0
+        },
+        {
+          "src": "assets/2020-12-22/frame_0142.jpg",
+          "second": 70.5
+        },
+        {
+          "src": "assets/2020-12-22/frame_0143.jpg",
+          "second": 71.0
+        },
+        {
+          "src": "assets/2020-12-22/frame_0144.jpg",
+          "second": 71.5
+        },
+        {
+          "src": "assets/2020-12-22/frame_0145.jpg",
+          "second": 72.0
+        }
+      ]
+    },
+    {
+      "date": "2020-12-23",
+      "cover": 7,
+      "photos": [
+        {
+          "src": "assets/2020-12-23/frame_0146.jpg",
+          "second": 72.5
+        },
+        {
+          "src": "assets/2020-12-23/frame_0147.jpg",
+          "second": 73.0
+        },
+        {
+          "src": "assets/2020-12-23/frame_0148.jpg",
+          "second": 73.5
+        },
+        {
+          "src": "assets/2020-12-23/frame_0149.jpg",
+          "second": 74.0
+        },
+        {
+          "src": "assets/2020-12-23/frame_0150.jpg",
+          "second": 74.5
+        },
+        {
+          "src": "assets/2020-12-23/frame_0151.jpg",
+          "second": 75.0
+        },
+        {
+          "src": "assets/2020-12-23/frame_0152.jpg",
+          "second": 75.5
+        },
+        {
+          "src": "assets/2020-12-23/frame_0153.jpg",
+          "second": 76.0
+        },
+        {
+          "src": "assets/2020-12-23/frame_0154.jpg",
+          "second": 76.5
+        },
+        {
+          "src": "assets/2020-12-23/frame_0155.jpg",
+          "second": 77.0
+        },
+        {
+          "src": "assets/2020-12-23/frame_0156.jpg",
+          "second": 77.5
+        }
+      ]
+    },
+    {
+      "date": "2020-12-24",
+      "cover": 6,
+      "photos": [
+        {
+          "src": "assets/2020-12-24/frame_0157.jpg",
+          "second": 78.0
+        },
+        {
+          "src": "assets/2020-12-24/frame_0158.jpg",
+          "second": 78.5
+        },
+        {
+          "src": "assets/2020-12-24/frame_0159.jpg",
+          "second": 79.0
+        },
+        {
+          "src": "assets/2020-12-24/frame_0160.jpg",
+          "second": 79.5
+        },
+        {
+          "src": "assets/2020-12-24/frame_0161.jpg",
+          "second": 80.0
+        },
+        {
+          "src": "assets/2020-12-24/frame_0162.jpg",
+          "second": 80.5
+        },
+        {
+          "src": "assets/2020-12-24/frame_0163.jpg",
+          "second": 81.0
+        }
+      ]
+    },
+    {
+      "date": "2020-12-25",
+      "cover": 7,
+      "photos": [
+        {
+          "src": "assets/2020-12-25/frame_0164.jpg",
+          "second": 81.5
+        },
+        {
+          "src": "assets/2020-12-25/frame_0165.jpg",
+          "second": 82.0
+        },
+        {
+          "src": "assets/2020-12-25/frame_0166.jpg",
+          "second": 82.5
+        },
+        {
+          "src": "assets/2020-12-25/frame_0167.jpg",
+          "second": 83.0
+        },
+        {
+          "src": "assets/2020-12-25/frame_0168.jpg",
+          "second": 83.5
+        },
+        {
+          "src": "assets/2020-12-25/frame_0169.jpg",
+          "second": 84.0
+        },
+        {
+          "src": "assets/2020-12-25/frame_0170.jpg",
+          "second": 84.5
+        },
+        {
+          "src": "assets/2020-12-25/frame_0171.jpg",
+          "second": 85.0
+        },
+        {
+          "src": "assets/2020-12-25/frame_0172.jpg",
+          "second": 85.5
+        },
+        {
+          "src": "assets/2020-12-25/frame_0173.jpg",
+          "second": 86.0
+        }
+      ]
+    },
+    {
+      "date": "2020-12-28",
+      "cover": 7,
+      "photos": [
+        {
+          "src": "assets/2020-12-28/frame_0174.jpg",
+          "second": 86.5
+        },
+        {
+          "src": "assets/2020-12-28/frame_0175.jpg",
+          "second": 87.0
+        },
+        {
+          "src": "assets/2020-12-28/frame_0176.jpg",
+          "second": 87.5
+        },
+        {
+          "src": "assets/2020-12-28/frame_0177.jpg",
+          "second": 88.0
+        },
+        {
+          "src": "assets/2020-12-28/frame_0178.jpg",
+          "second": 88.5
+        },
+        {
+          "src": "assets/2020-12-28/frame_0179.jpg",
+          "second": 89.0
+        },
+        {
+          "src": "assets/2020-12-28/frame_0180.jpg",
+          "second": 89.5
+        },
+        {
+          "src": "assets/2020-12-28/frame_0181.jpg",
+          "second": 90.0
+        },
+        {
+          "src": "assets/2020-12-28/frame_0182.jpg",
+          "second": 90.5
+        },
+        {
+          "src": "assets/2020-12-28/frame_0183.jpg",
+          "second": 91.0
+        },
+        {
+          "src": "assets/2020-12-28/frame_0184.jpg",
+          "second": 91.5
+        }
+      ]
+    },
+    {
+      "date": "2020-12-29",
+      "cover": 7,
+      "photos": [
+        {
+          "src": "assets/2020-12-29/frame_0185.jpg",
+          "second": 92.0
+        },
+        {
+          "src": "assets/2020-12-29/frame_0186.jpg",
+          "second": 92.5
+        },
+        {
+          "src": "assets/2020-12-29/frame_0187.jpg",
+          "second": 93.0
+        },
+        {
+          "src": "assets/2020-12-29/frame_0188.jpg",
+          "second": 93.5
+        },
+        {
+          "src": "assets/2020-12-29/frame_0189.jpg",
+          "second": 94.0
+        },
+        {
+          "src": "assets/2020-12-29/frame_0190.jpg",
+          "second": 94.5
+        },
+        {
+          "src": "assets/2020-12-29/frame_0191.jpg",
+          "second": 95.0
+        },
+        {
+          "src": "assets/2020-12-29/frame_0192.jpg",
+          "second": 95.5
+        },
+        {
+          "src": "assets/2020-12-29/frame_0193.jpg",
+          "second": 96.0
+        },
+        {
+          "src": "assets/2020-12-29/frame_0194.jpg",
+          "second": 96.5
+        }
+      ]
+    },
+    {
+      "date": "2020-12-30",
+      "cover": 7,
+      "photos": [
+        {
+          "src": "assets/2020-12-30/frame_0195.jpg",
+          "second": 97.0
+        },
+        {
+          "src": "assets/2020-12-30/frame_0196.jpg",
+          "second": 97.5
+        },
+        {
+          "src": "assets/2020-12-30/frame_0197.jpg",
+          "second": 98.0
+        },
+        {
+          "src": "assets/2020-12-30/frame_0198.jpg",
+          "second": 98.5
+        },
+        {
+          "src": "assets/2020-12-30/frame_0199.jpg",
+          "second": 99.0
+        },
+        {
+          "src": "assets/2020-12-30/frame_0200.jpg",
+          "second": 99.5
+        },
+        {
+          "src": "assets/2020-12-30/frame_0201.jpg",
+          "second": 100.0
+        },
+        {
+          "src": "assets/2020-12-30/frame_0202.jpg",
+          "second": 100.5
+        },
+        {
+          "src": "assets/2020-12-30/frame_0203.jpg",
+          "second": 101.0
+        },
+        {
+          "src": "assets/2020-12-30/frame_0204.jpg",
+          "second": 101.5
+        },
+        {
+          "src": "assets/2020-12-30/frame_0205.jpg",
+          "second": 102.0
+        }
+      ]
+    },
+    {
+      "date": "2020-12-31",
+      "cover": 7,
+      "photos": [
+        {
+          "src": "assets/2020-12-31/frame_0206.jpg",
+          "second": 102.5
+        },
+        {
+          "src": "assets/2020-12-31/frame_0207.jpg",
+          "second": 103.0
+        },
+        {
+          "src": "assets/2020-12-31/frame_0208.jpg",
+          "second": 103.5
+        },
+        {
+          "src": "assets/2020-12-31/frame_0209.jpg",
+          "second": 104.0
+        },
+        {
+          "src": "assets/2020-12-31/frame_0210.jpg",
+          "second": 104.5
+        },
+        {
+          "src": "assets/2020-12-31/frame_0211.jpg",
+          "second": 105.0
+        },
+        {
+          "src": "assets/2020-12-31/frame_0212.jpg",
+          "second": 105.5
+        },
+        {
+          "src": "assets/2020-12-31/frame_0213.jpg",
+          "second": 106.0
+        },
+        {
+          "src": "assets/2020-12-31/frame_0214.jpg",
+          "second": 106.5
+        },
+        {
+          "src": "assets/2020-12-31/frame_0215.jpg",
+          "second": 107.0
+        }
+      ]
+    },
+    {
+      "date": "2021-01-01",
+      "cover": 2,
+      "photos": [
+        {
+          "src": "assets/2021-01-01/frame_0216.jpg",
+          "second": 107.5
+        },
+        {
+          "src": "assets/2021-01-01/frame_0217.jpg",
+          "second": 108.0
+        },
+        {
+          "src": "assets/2021-01-01/frame_0218.jpg",
+          "second": 108.5
+        }
+      ]
+    }
+  ]
+}
